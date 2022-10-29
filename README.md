@@ -1,8 +1,8 @@
 <h1>CCList - Frontend cheat-code DB website</h1>
+<h3>Demo: https://charlesknapp.github.io/CCList/</h3>
 <p>
 <img src="https://i.ibb.co/5BhCjqw/cclist-demo.gif" width="800px" height="auto">
 </p>
-<h3>Demo: https://charlesknapp.github.io/CCList/</h3>
 <p>
 CCList is a fun project which stores table data within the localStorage on your browser.
 Includes ajax-search functionality, adding/removing table data (cheat codes), and some sexy UI designing.<br>
