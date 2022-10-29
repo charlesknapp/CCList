@@ -4,7 +4,8 @@
 </p>
 <p>
 CCList is a fun project which stores table data within the localStorage on your browser.
-Includes ajax-search functionality, adding/removing table data (cheat codes), and some sexy UI designing. Feel free to check it out and use parts for your own projects.
+Includes ajax-search functionality, adding/removing table data (cheat codes), and some sexy UI designing.<br>
+Feel free to check it out and use parts for your own projects.
 </p>
 <h2>Quick-start (How To Install)</h2>
 <ol>
