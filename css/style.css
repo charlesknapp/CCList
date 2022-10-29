@@ -22,30 +22,62 @@
 /*===============================================================*/
 /* STRUCTURE STYLING */
 body {
-    height: 100%;
     -webkit-user-select: none;
     user-select: none;
-    margin: 0 auto;
-    overflow-x: hidden;
-}
-table {
+    margin: 0;
     width: 100%;
-    margin-top: 1rem;
+    height: 100%;
+}
+.alert {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.table {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.table>:not(caption)>*>* {
+    padding: 0.25rem 0.25rem !important;
 }
 td:first-child {
     font-weight: bold;
     color: pink;
 }
-.container.mt-4 {
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #a13cff 0%, #784BA0 50%, #2B86C5 100%);
+td:hover {
+    color: #bdfffc !important;
+}
+.form-control {
+    background-color: rgba(110,110,110,0.22);
+}
+.form-control:focus {
+    background-color: rgba(48,17,94,0.35);
+    box-shadow: 0 0 0 0.15rem rgba(234,57,184,0.15);
+}
+form#code-form {
+    padding: 20px;
+    background: rgba(187,187,187, 0.15);
+    border-radius: 5px;
+    font-weight: bold;
+}
+.code-container {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    /* background-color: #FF3CAC; */
+    /* background-image: linear-gradient(225deg, #a13cff 0%, #784BA0 50%, #2B86C5 100%); */
     border-radius: 4px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 45px;
-    padding-left: 45px;
     box-shadow: 0px 0px 10px black;
     border: 1px solid rgba(0,224,255,0.50) !important;
+
+    background: linear-gradient(124deg, #ff220025, #e81d1d25, #e8b91d25, #e5e81d25, #1de83f25, #1ddee825, #2b1de825, #df00f325, #df00f325);
+    background-size: 1000% 1000%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
 }
 #header-information {
     color: #e1e1e1 !important;
@@ -64,22 +96,41 @@ h1.display-4.text-center {
 /*===============================================================*/
 /* BUTTON STYLING */
 .button-container {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
     align-items: flex-end;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    background: rgba(187,187,187, 0.15);
+    border-radius: 5px;
+}
+#addbtn {
+    font-weight: bold;
+    animation: pulse-green 3s infinite;
+    margin-right: 5px;
 }
 #syncbtn {
     max-width: 48px;
     margin-left: 5px;
 }
-#search {
+#reportbtn {
+    max-width: 48px;
     margin-left: 5px;
-    max-width:max-content;
+}
+#search {
+    margin-left: auto;
+    max-width:50%;
+}
+a {
+    text-decoration: none;
 }
 /*===============================================================*/
-/* FANCY STUFF */
+/* GLITCH LOGO STUFF */
 .glitch {
     position: relative;
     color: #fff;
@@ -307,4 +358,45 @@ h1.display-4.text-center {
         transform: skew(3deg);
    }
 }
+
+/* RAINBOW CONTAINER STUFF */
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+/* PULSING BUTTON STUFF */
+@keyframes pulse-green {
+    0% {
+    transform: scale(1.00);
+    box-shadow: 0 0 0 0 #178ad1cb;
+    }
+      
+    70% {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 10px #178ad100;
+    }
+      
+    100% {
+    transform: scale(1.00);
+    box-shadow: 0 0 0 0 #178ad100;
+    }
+    }
+
 /*===============================================================*/

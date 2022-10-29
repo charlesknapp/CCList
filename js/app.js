@@ -48,8 +48,8 @@ class UI {
         const form = document.querySelector('#code-form');
         container.insertBefore(div, form);
 
-        //Remove div in 2000ms (2s)
-        setTimeout(() => document.querySelector('.alert').remove(),2000);
+        //Remove div in 3000ms (3s)
+        setTimeout(() => document.querySelector('.alert').remove(),3000);
     }
 
     //Deleting a code
@@ -161,6 +161,11 @@ document.querySelector('#code-list').addEventListener('click', (e) => {
 //Event: Sync the codes
 function syncCodes() {
     UI.showAlert("Syncing is disabled until further notice.", 'info');
+}
+
+//Event: Report something
+function reportSomething() {
+    UI.showAlert("The reporting function is coming soon.", 'primary');
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// [ SEARCH FUNCTION ]
