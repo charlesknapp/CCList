@@ -15,6 +15,7 @@ class Code {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 class UI {
+
     static displayCodes() {
         const codes = Storage.getCodes();
 
@@ -28,7 +29,7 @@ class UI {
         //Creating the new table data for submission
         const row = document.createElement('tr');
         row.innerHTML = `
-        <td>${code.gameTitle}</td>
+        <td id="row-title">${code.gameTitle}</td>
         <td>${code.cheatCode}</td>
         <td>${code.codeDesc}</td>
         <td><a href="#" title="Delete code" class="btn btn-danger btn-sm delete">X</a></td>
@@ -126,6 +127,13 @@ document.querySelector('#code-form').addEventListener('submit', (e) => {
     //Validate submissions
     if(gameTitle === '' || cheatCode === '' || codeDesc === '') {
         UI.showAlert('Please fill in all fields', 'danger');
+
+        //failed css effect
+        const formFailManager = document.querySelector('form')
+        $(formFailManager).addClass("fail").delay(500).queue(function(){
+            $(formFailManager).removeClass("fail");
+            $(formFailManager).dequeue();
+          });
     }
     else {
     //Initialize a new code
@@ -183,3 +191,6 @@ $("#search").on("keyup", function() {
     });
 
   });
+
+  //// Disable right-click
+  document.addEventListener('contextmenu', event => event.preventDefault());

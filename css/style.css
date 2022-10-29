@@ -46,9 +46,15 @@ td:first-child {
     font-weight: bold;
     color: pink;
 }
+td:last-child {
+    float: right;
+}
 td:hover {
     color: #bdfffc !important;
 }
+form.fail {
+    animation: fail 0.5s;
+  }
 .form-control {
     background-color: rgba(110,110,110,0.22);
 }
@@ -111,7 +117,7 @@ h1.display-4.text-center {
 }
 #addbtn {
     font-weight: bold;
-    animation: pulse-green 3s infinite;
+    animation: pulse-cyan 3s infinite;
     margin-right: 5px;
 }
 #syncbtn {
@@ -382,7 +388,7 @@ a {
 }
 
 /* PULSING BUTTON STUFF */
-@keyframes pulse-green {
+@keyframes pulse-cyan {
     0% {
     transform: scale(1.00);
     box-shadow: 0 0 0 0 #178ad1cb;
@@ -398,5 +404,27 @@ a {
     box-shadow: 0 0 0 0 #178ad100;
     }
     }
+
+/* FAIL EFFECT STUFF */
+@keyframes fail {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(0.5em);
+    }
+    40% {
+      transform: translate(-0.25em);
+    }
+    60% {
+      transform: translate(0.5em);
+    }
+    80% {
+      transform: translate(-0.25em);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
 
 /*===============================================================*/
