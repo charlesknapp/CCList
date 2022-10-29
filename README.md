@@ -7,4 +7,4 @@ Includes ajax-search functionality, adding/removing table data (cheat codes), an
 
 ## Demo
 
-<img src="https://i.ibb.co/B46fdKK/ezgif-com-gif-maker-35.gif" width="460px" height="auto">
+<img src="https://i.ibb.co/B46fdKK/ezgif-com-gif-maker-35.gif" align="center" width="660px" height="auto">
