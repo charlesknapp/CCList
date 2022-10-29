@@ -32,17 +32,17 @@
 
             <div class="form-group">
                 <label for="gameTitle">Enter game title</label>
-                <input type="text" id="gameTitle" class="form-control" oninput="this.value = this.value.toUpperCase()">
+                <input autocomplete="off" type="text" id="gameTitle" class="form-control" oninput="this.value = this.value.toUpperCase()">
             </div>
 
             <div class="form-group mt-2">
                 <label for="cheatCode">Enter cheat code</label>
-                <input type="text" id="cheatCode" class="form-control" oninput="this.value = this.value.toUpperCase()">
+                <input autocomplete="off" type="text" id="cheatCode" class="form-control" oninput="this.value = this.value.toUpperCase()">
             </div>
 
             <div class="form-group mt-2">
                 <label for="codeDesc">Enter code description</label>
-                <input type="text" id="codeDesc" class="form-control">
+                <input autocomplete="off" type="text" id="codeDesc" class="form-control">
             </div>
         </form>
         <div id="button-container" class="button-container">
@@ -50,7 +50,7 @@
             <button id="syncbtn" title="Sync from DB" class="btn btn-primary" onclick="syncCodes()"><i class="fa-solid fa-rotate"></i></button>
             <button id="reportbtn" title="Report something" class="btn btn-warning" onclick="reportSomething()"><i class="fa-solid fa-warning"></i></button>
             <a href="https://discord.com/" target="_blank"><button id="reportbtn" title="Join our Discord" class="btn btn-secondary"><i class="fa-brands fa-discord"></i></button></a>
-            <input id="search" type="text" class="form-control" placeholder="Search for a cheat code...                                            ( game titles, cheat descriptions, codes )">
+            <input autocomplete="off" id="search" type="text" class="form-control" placeholder="Search for a cheat code...                                            ( game titles, cheat descriptions, codes )">
         </div>
         <hr>
         <div class="text-info" id="header-information">
