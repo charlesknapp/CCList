@@ -158,18 +158,22 @@ document.querySelector('#code-list').addEventListener('click', (e) => {
     Storage.removeCode(e.target.parentElement.previousElementSibling.textContent); //push ISBN
 });
 
-//Event: Sync the codes
+///////////////////////////////////////////////////////////////////////////////////////////
+//                                 Event: Sync the Codes                                //
+//////////////////////////////////////////////////////////////////////////////////////////
 function syncCodes() {
     UI.showAlert("Syncing is disabled until further notice.", 'info');
 }
 
-//Event: Report something
+///////////////////////////////////////////////////////////////////////////////////////////
+//                                Event: Report Something                               //
+//////////////////////////////////////////////////////////////////////////////////////////
 function reportSomething() {
     UI.showAlert("The reporting function is coming soon.", 'primary');
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// [ SEARCH FUNCTION ]
-//// used jQuery, sorry (not-sorry)! Aren't we going to review that at some point? :)
+//// used jQuery, sorry (not-sorry)!
 
 $("#search").on("keyup", function() {
     var value = $(this).val().toLowerCase();
