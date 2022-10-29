@@ -1,5 +1,5 @@
 <h1>CCList - Frontend cheat-code DB website</h1>
-<h3>Demo: https://charlesknapp.github.io/CCList/</h3>
+<h3>Demo: <a href="https://charlesknapp.github.io/CCList/" target="_blank">Click me</a></h3>
 <p>
 <img src="https://i.ibb.co/5BhCjqw/cclist-demo.gif" width="800px" height="auto">
 </p>
