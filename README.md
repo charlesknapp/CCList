@@ -11,4 +11,4 @@ Includes ajax-search functionality, adding/removing table data (cheat codes), an
 <li>Clone / download this repository</li>
 <li>Open the project folder in your favorite IDE (VSCode, Visual Studio, etc)</li>
 <li>Open a live-server to access full functionality of the demo. Either use an extension within your IDE, or host it locally with XAMPP or alterantives</li>
-</p>
+</ol>
