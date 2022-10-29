@@ -1,6 +1,6 @@
 <h1 align="center">CCList - Frontend cheat-code DB website</h1>
 <p align="center">
-<img src="https://i.gyazo.com/1a50482f22f80bebd733a7ed8136cb9f.png" width="200px" height="auto">
+<img src="https://i.gyazo.com/1a50482f22f80bebd733a7ed8136cb9f.png" width="800px" height="auto">
 </p>
 <p align="center">
 CCList is a fun project which stores table data within the localStorage on your browser.
